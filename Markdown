@@ -1,0 +1,27 @@
+# 🚢 Titanic Survival Prediction: ML Pipeline Comparison
+
+This project uses an end-to-end scikit-learn pipeline to build and compare a **Random Forest Classifier** and a **Logistic Regression Model** for predicting passenger survival on the Titanic.
+
+## 🎯 Objectives
+
+* Implement a robust pipeline with `ColumnTransformer` for clean data preprocessing.
+* Optimize model performance using **Grid Search Cross-Validation**.
+* Compare the predictive power and interpretability of an ensemble vs. a linear model.
+
+---
+
+## ⚙️ Technical Approach
+
+### Preprocessing Steps:
+
+* **Numerical Features (Age, Fare):** Imputed with the **median** and scaled using `StandardScaler`.
+* **Categorical Features (Sex, Class):** Imputed with the **most frequent** value and encoded using `OneHotEncoder`.
+
+### 📈 Key Results
+
+| Model | Model Type | Test Set Accuracy |
+| :--- | :--- | :--- |
+| Random Forest (Tuned) | Ensemble | **83.24%** |
+| Logistic Regression (Tuned) | Linear | **82.68%** |
+
+The **Random Forest** performed marginally better, but the feature interpretation revealed significant collinearity, suggesting an area for deeper analysis.
