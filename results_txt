@@ -1,0 +1,6 @@
+ Model Accuracy Comparison
+                 Model  Accuracy
+0        Random Forest  0.832402
+1  Logistic Regression  0.826816
+2              XGBoost  0.782123
+3             Ensemble  0.832402
